@@ -13,7 +13,7 @@ const getLocal=()=>{
 }
 
 const saveLocal=()=>{
-    localStorage.setItem("List student",JSON.stringify())
+    localStorage.setItem("List student",JSON.stringify(students))
 }
 
 let ulElement=document.getElementsByTagName("ul")[0]
@@ -26,4 +26,5 @@ const renderData=()=>{
     })
 
 }
+saveLocal()
 renderData()
